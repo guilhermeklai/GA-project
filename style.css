@@ -1,0 +1,89 @@
+body{
+    margin: 0px;
+    font-family: 'Dosis', sans-serif;
+}
+
+nav{
+    background-color: rgb(4, 245, 77);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(138, 138, 138);
+}
+
+.grid{
+    grid-area: grid;
+    grid-auto-rows: 300px 300px 350px 300px 300px 150px;
+    grid-template-areas: 
+    "header",
+    "main",
+    "section",
+    "somos",
+    "projetos",
+    "footer";
+}
+
+header{
+    grid-area: header;
+    height: 300px;
+    
+}
+
+header div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: auto;
+    height: 300px;
+}
+
+div h1{
+    color:  rgb(4, 245, 77);
+    font-size: 40px;
+    text-shadow: 1px 1px rgb(138, 138, 138);
+}
+
+main{
+    background-image: url(./image/GA-banner.jpg);
+    background-size: cover;
+    width: auto;
+    grid-area: main;
+    height: 300px;
+}
+
+section{
+    grid-area: section;
+    height: 350px;
+}
+
+.somos{
+    grid-area: somos;
+    height: 300px;
+}
+
+.projetos{
+    grid-area: projetos;
+    height: 300px;
+}
+
+footer{
+    grid-area: footer;
+    height: 150px;
+}
+
+
+
+
+
+
